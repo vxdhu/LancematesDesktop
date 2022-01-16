@@ -28,6 +28,12 @@ body {
   color: #5C707D;
   letter-spacing: 1px;
   margin-bottom: 3em;
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+
+.section-heading:first-of-type {
+  margin-top: 0;
 }
 
 .ovw-container {
@@ -181,13 +187,16 @@ body {
   margin: 0 1em;
 }
 
-.project-card {
+.project-card,
+.bid-card,
+.pny-card {
   padding: .8em 0;
   padding-right: 3%;
   background-color: white;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1.5em;
 }
 
 .project-img {
@@ -198,13 +207,40 @@ body {
   border-radius: 50%;
 }
 
-.project-desc h3 {
+.desc-img {
+  display: flex;
+}
+
+.project-desc,
+.bid-desc {
+  padding-left: 1.2em;
+}
+
+.project-desc h3,
+.bid-desc h3 {
   font-size: 12px;
   color: #5C707D;
   font-weight: 600;
+  padding-bottom: .4em;
 }
 
-.project-rate {
+.project-desc span,
+.bid-desc span {
+  display: block;
+  color: #236AAE;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.project-desc p,
+.bid-desc p {
+  font-size: 10px;
+  font-weight: 300;
+  color: #5C707D;
+}
+
+.project-rate,
+.bid-rate {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -213,14 +249,16 @@ body {
   border-left: 1px solid #97979777;
 }
 
-.project-rate p {
+.project-rate p,
+.bid-rate p {
   font-size: 18px;
   font-weight: 600;
   color: #5C707D;
   padding-bottom: .3em;
 }
 
-.project-rate span {
+.project-rate span,
+.bid-rate span {
   color: white;
   background-color: #7ED321;
   font-size: 9px;
@@ -228,4 +266,47 @@ body {
   padding: .3em 1em;
   border-radius: 1em;
   text-align: center;
+  text-transform: uppercase;
+  width: 61px;
+}
+
+.bid-rate span {
+  background-color: #2EBFD9;
+}
+
+.pny-card .bid-rate span {
+  padding: .3em 0;
+}
+
+.lost-bid {
+  background-color: #F2695A !important;
+}
+
+.bid-placed {
+  background-color: #F5A623 !important;
+}
+
+.head-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-right: .8em;
+}
+
+.head-btn-container .section-heading {
+  margin-top: 1em;
+}
+
+.view-all-btn {
+  background-color: #5C707D;
+  font-size: 9px;
+  font-weight: 400;
+  color: white;
+  padding: .4em 1em;
+  border: none;
+  outline: none;
+  border-radius: 1.5em;
+  height: max-content;
+  margin-top: 1em;
+  cursor: pointer;
 }

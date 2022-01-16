@@ -19,6 +19,9 @@
 
 .header-for-navbar {
     background: linear-gradient(225deg, #524269 0%, #4A4068 34.43%, #423E66 46.97%, #2D3863 100%);
+    position: sticky;
+    top: 0;
+    z-index: 99;
 }
 
 .navbar {
