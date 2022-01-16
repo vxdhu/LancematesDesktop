@@ -1,0 +1,134 @@
+  // Main Start
+  // Subheader
+  .sub-header {
+      background-color: #293259;
+  }
+  
+  .welcome-type {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.2em 5%;
+      padding-bottom: 0;
+  }
+  
+  .welcomediv {
+      display: flex;
+  }
+  
+  .userimage {
+      margin-right: 1em;
+      margin-bottom: -.8em;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+  }
+  
+  .welcometext {
+      display: block;
+      color: #FCCE00;
+      font-weight: 400;
+      font-size: 12px;
+      padding-top: .6em;
+      padding-bottom: .25em;
+  }
+  
+  .username {
+      display: block;
+      font-weight: 300;
+      font-size: 20px;
+      color: white;
+  }
+  
+  .text-icon-container {
+      display: flex;
+      justify-content: space-between;
+      width: 40%;
+      align-items: center;
+  }
+  
+  .redirect-btns {
+      margin-top: -.6em;
+      img {
+          margin-left: 1.5em;
+      }
+  }
+  
+  .welcome-type {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  // checkbox
+  .switch-button {
+      margin-top: .6em;
+      background: rgba(35, 31, 32, .2);
+      border-radius: 30px;
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: white;
+      position: relative;
+      padding-right: 152px;
+      position: relative;
+      &:before {
+          content: "POSTER";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          width: 150px;
+          font-size: 10px;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 3;
+          pointer-events: none;
+      }
+      &-checkbox {
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          z-index: 2;
+          &:checked+.switch-button-label:before {
+              transform: translateX(150px);
+              transition: transform 300ms linear;
+          }
+          &+.switch-button-label {
+              position: relative;
+              padding: 15px 0;
+              display: block;
+              user-select: none;
+              pointer-events: none;
+              &:before {
+                  content: "";
+                  background: linear-gradient(134.72deg, #236AAE 0%, #6DD7AC 101.5%);
+                  height: 90%;
+                  width: 98%;
+                  top: 5%;
+                  bottom: 5%;
+                  position: absolute;
+                  left: 1%;
+                  border-radius: 30px;
+                  transform: translateX(0);
+                  transition: transform 300ms;
+              }
+              .switch-button-label-span {
+                  position: relative;
+              }
+          }
+      }
+  }
