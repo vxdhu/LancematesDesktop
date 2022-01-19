@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Menu - LanceMates</title>
+    <title>Profile2 - LanceMates</title>
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/subheader.css">
+    <link rel="stylesheet" href="css/profile2.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/utilsmenu.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
     </style>
@@ -20,13 +21,10 @@
         <div class="navbar">
             <div class="brandwrap"><img style="margin-right: 2.5em;" class="brand-logo" src="images/Shape.svg" alt="logo"> LANCE<b>MATES</b> </div>
             <nav class="navlinks">
-                <ul>
-                    <li><a href="#">Create Task</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">My Jobs</a></li>
+                <ul style="justify-content: end;">
+
                     <li><a href="#">Help</a></li>
-                    <li><a href="#">Alerts</a></li>
-                    <li><a href="#">Messages</a></li>
+
                 </ul>
             </nav>
             <a href="#" class="logout-btn">Logout</a>
@@ -34,39 +32,76 @@
 
     </header>
     <main>
-        <header class="sub-header">
 
-            <section class="welcome-type">
+        <header class="profile-sub-header">
 
-                <div class="text-icon-container">
-                    <div class="welcomediv">
-                        <div class="userimage">
+            <section class="profile-wrapper">
+
+                <div class="profile-details">
+
+
+                    <div class="p-img-text">
+                        <div class="profile-img">
                             <img src="images/Oval 4.png" alt="">
                         </div>
-                        <div class="welcome-text">
-                            <p class="welcometext">Welcome</p>
-                            <p class="username">PolinaK</p>
-                        </div>
-                    </div>
-                    <div class="redirect-btns">
-                        <a href="#"><img src="images/red-btn2.svg" alt=""></a>
-                        <a href="#"><img src="images/red-btn.svg" alt=""></a>
-                    </div>
-                </div>
-                <div class="usertypediv">
+                        <div class="profile-text">
 
+                            <div class="profile-rating">
+                                <img src="images/ratestarfill.png" alt="">
+                                <img src="images/ratestarfill.png" alt="">
+                                <img src="images/ratestarfill.png" alt="">
+                                <img src="images/ratestarfill.png" alt="">
+                                <img src="images/ratestarempty.png" alt="">
+
+
+                            </div>
+
+                            <span class="profile-name">Polina  </span>
+                            <p> <b>IST |</b> Last Online 11:30AM Today </p>
+                            <p>Jayanagar, Bangalore</p>
+
+
+                        </div>
+
+
+
+                    </div>
                     <div class="switch-button">
                         <input class="switch-button-checkbox" type="checkbox"></input>
                         <label class="switch-button-label" for=""><span class="switch-button-label-span">FREELANCER</span></label>
                     </div>
 
+                </div>
+                <div class="profile-stats">
 
-
+                    <div class="stat-div">
+                        <span>90%</span>
+                        <p>Completion</p>
+                    </div>
+                    <div class="stat-div">
+                        <span>€50</span>
+                        <p>PER hour</p>
+                    </div>
+                    <div class="stat-div">
+                        <img src="images/locationico.png" alt="#">
+                        <p>2 kms</p>
+                    </div>
 
                 </div>
 
+
+
+
+
             </section>
+
+
+
+
         </header>
+
+
+
         <div class="grid-container">
             <section class="overview-section">
 
@@ -235,11 +270,39 @@
 
             </section>
 
+
+
+
+
+
         </div>
 
 
+        <section class="utils-menu">
+
+            <div class="util-div">
+                <img src="images/addtask.png" alt="">
+                <span class="createtask">CREATE TASK</span>
+            </div>
+            <div class="util-divider"></div>
+            <div class="util-div">
+                <img src="images/projects.png" alt="">
+                <span>PROJECTS</span>
+            </div>
+            <div class="util-divider"></div>
+            <div class="util-div">
+                <img src="images/massenger.png" alt="">
+                <span>MESSENGER</span>
+            </div>
+            <div class="util-divider"></div>
+            <div class="util-div">
+                <img src="images/alerts.png" alt="">
+                <span>ALERTS</span>
+            </div>
 
 
+
+        </section>
     </main>
     <footer></footer>
 

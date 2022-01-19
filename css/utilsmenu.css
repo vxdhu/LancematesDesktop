@@ -1,0 +1,48 @@
+.utils-menu {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 1em .8em;
+  flex-direction: column;
+  left: 0;
+  top: 35%;
+  background: #EDF2F5;
+  box-shadow: 0px 1px 14px #AAB4BA;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 1;
+}
+
+.util-divider {
+  background-color: #979797;
+  height: 1px;
+  margin: 1.5em 0;
+  width: 30px;
+}
+
+.util-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.util-div img {
+  margin-bottom: .25em;
+}
+
+.util-div span {
+  font-size: 10px;
+  font-weight: 400;
+  color: #5C707D;
+  padding-top: 1em;
+  text-transform: uppercase;
+}
+
+.util-div .createtask {
+  background-color: #FCCE00;
+  padding: .35em 1em;
+  border-radius: 1.5em;
+  margin-top: .7em;
+  color: black;
+}
