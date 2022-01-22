@@ -202,3 +202,9 @@ body {
 .project-card:hover {
   transform: translateX(30px);
 }
+
+.map-container {
+  padding: .5em;
+  background-color: white;
+  border-radius: 5px;
+}

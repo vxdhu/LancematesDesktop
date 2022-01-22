@@ -203,8 +203,9 @@
                 <section class="location-view">
                     <h1 class="main-heading">location view</h1>
 
-
-                    <div class="amp-container"></div>
+                    <div class="map-container">
+                        <div id="googleMap" style="width:100%;height:75vh; outline: none;"></div>
+                    </div>
                 </section>
 
 
@@ -245,7 +246,44 @@
 
 
 
+    <script>
+        function myMap() {
+            const myLatLng = {
+                lat: -25.363,
+                lng: 131.044
+            };
+            const myLatLng2 = {
+                lat: -21.363,
+                lng: 131.044
+            };
+            const myLatLng3 = {
+                lat: -23.363,
+                lng: 131.044
+            };
+            const map = new google.maps.Map(document.getElementById("googleMap"), {
+                zoom: 4,
+                center: myLatLng,
+            });
 
+            new google.maps.Marker({
+                position: myLatLng,
+                map,
+                title: "Hello World!",
+            });
+            new google.maps.Marker({
+                position: myLatLng2,
+                map,
+                title: "Hello World!2",
+            });
+            new google.maps.Marker({
+                position: myLatLng3,
+                map,
+                title: "Hello World!3",
+            });
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=myMap"></script>
 </body>
 
 </html>
