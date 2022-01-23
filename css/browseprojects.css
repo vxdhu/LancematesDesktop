@@ -221,6 +221,7 @@ body {
 .details-wrapper {
   position: relative;
   padding: 1.5em 0;
+  padding-bottom: 1em;
   background: linear-gradient(180deg, #524269 0%, #4A4068 0%, #423E66 46.97%, #2D3863 100%);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -247,11 +248,64 @@ body {
   padding-top: .6em;
 }
 
+.chat-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.expiry {
+  color: #FCCE00;
+  font-size: 12px;
+  font-weight: 400;
+  align-self: flex-start;
+  padding-left: 18%;
+}
+
+.projectname {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  align-self: flex-start;
+  padding-left: 18%;
+}
+
+.detail-ovw-container {
+  padding-left: 18%;
+  margin-top: 1em;
+  display: flex;
+}
+
+.detail-ovw-container .detail-ovw {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1em;
+  min-width: 100px;
+  background-color: #343556;
+  padding: .5em .8em;
+  border-radius: 10px;
+}
+
+.detail-ovw-container .detail-ovw span {
+  color: #FCCE00;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.detail-ovw-container .detail-ovw p {
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 7px;
+  text-transform: uppercase;
+}
+
 .toggle-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 3em;
+  padding-top: 2em;
 }
 
 .toggle {
@@ -323,4 +377,14 @@ body {
 
 .toggle #input3:checked ~ .track {
   left: 190px;
+}
+
+.divider-cap {
+  width: 18px;
+  height: 4px;
+  background-color: #c3c3c3;
+  border-radius: 2px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2em;
 }
