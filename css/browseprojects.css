@@ -232,7 +232,7 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  padding: 1.2em;
+  padding: 1em;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -387,4 +387,139 @@ body {
   display: block;
   margin: 0 auto;
   margin-top: 2em;
+}
+
+.otherinfo-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5%;
+  padding: 1em 3%;
+}
+
+.bidders {
+  grid-column: 1/3;
+}
+
+.comments {
+  grid-column: 1/3;
+}
+
+.prdesc p {
+  font-size: 10px;
+  color: #5C707D;
+  width: 90%;
+  padding-bottom: 1.5em;
+}
+
+.abttheemp {
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+
+.abttheemp p:first-of-type {
+  font-size: 12px;
+  color: #46454C;
+}
+
+.abttheemp p:nth-of-type(2) {
+  font-size: 11px;
+  color: #39B5E3;
+  padding-bottom: .5em;
+}
+
+.abttheemp p:nth-of-type(3) {
+  font-size: 11px;
+  color: #4A4A4A;
+}
+
+.abttheemp .abtempflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.abttheemp .stars {
+  margin-right: 1.5em;
+}
+
+.abttheemp .stars img {
+  width: 11px;
+}
+
+.abttheemp .rating-rev {
+  display: flex;
+  align-items: center;
+}
+
+.abttheemp .rating-rev p {
+  color: #5C707D;
+  font-weight: 10px;
+  font-weight: 600;
+}
+
+.abttheemp .rating-rev p span {
+  color: #F2695A;
+  padding-right: .25em;
+}
+
+.reqskills p {
+  color: #5C707D;
+  font-size: 10px;
+  padding-bottom: 1.5em;
+}
+
+.reqskills button {
+  font-size: 14px;
+  font-weight: 700;
+  color: #4A4A4A;
+  background-color: #FCCE00;
+  border: none;
+  outline: none;
+  padding: 12px 2em;
+  border-radius: 2em;
+  margin-bottom: 1.5em;
+}
+
+.ver-items {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+
+.ver-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18px;
+  padding-top: 1.25em;
+  padding-bottom: 1em;
+}
+
+.ver-card img {
+  margin-bottom: .6em;
+}
+
+.ver-card p {
+  font-size: 10px !important;
+  font-weight: 600;
+  color: #5C707D !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.ver-card:nth-of-type(1) {
+  border-right: 1px solid #DBDBDB;
+  border-left: 1px solid #DBDBDB;
+}
+
+.ver-card:nth-of-type(2) {
+  border-right: 1px solid #DBDBDB;
+}
+
+.bidders .main-heading {
+  margin-top: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #D9D9D9;
 }
