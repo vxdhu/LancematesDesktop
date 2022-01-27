@@ -498,5 +498,236 @@ body {
 
 .signup-sec {
   background-color: white;
-  padding: 4em 0;
+  padding-top: 8em;
+  padding-bottom: 15em;
+}
+
+.signup-sec .contained {
+  position: relative;
+}
+
+.background-obj {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  transform: rotate(30deg);
+  border-radius: 2em;
+  top: 30%;
+  left: -25%;
+  z-index: 0;
+  background-color: white;
+  box-shadow: -10px -10px 13px 2px #e2ecf2;
+}
+
+.location-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location-text .location-img {
+  width: 40%;
+  z-index: 2;
+}
+
+.location-text .location-img img {
+  width: 50%;
+  margin-left: 8em;
+}
+
+.location-text .signup-content {
+  width: 50%;
+}
+
+.location-text h1 {
+  color: #4A4A4A;
+  font-size: 36px;
+}
+
+.location-text p {
+  padding-top: 2em;
+  color: #5C707D;
+  font-size: 16px;
+}
+
+.primary-btn {
+  display: block;
+  background-color: #FCCE00;
+  color: #4A4A4A;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  padding: .8em 2em;
+  border-radius: 1.5em;
+  margin-top: 2.5em;
+  text-decoration: none;
+  width: max-content;
+}
+
+.testimony-sec {
+  background-color: #EDF2F5;
+  padding: 5em 0;
+  position: relative;
+}
+
+.testimony-sec::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  background-color: #EDF2F5;
+  bottom: 0;
+  height: 100px;
+  transform: skewY(2deg);
+  margin-top: -50px;
+}
+
+.testimony-sec::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: #EDF2F5;
+  bottom: 0;
+  height: 100px;
+  transform: skewY(-2deg);
+  margin-bottom: -50px;
+}
+
+.testimony-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimony-container img {
+  margin-bottom: 2em;
+}
+
+.testimony-container .testimony-text {
+  text-align: center;
+  width: 80%;
+  line-height: 2;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5C707D;
+}
+
+.testimony-container .testimony-name {
+  color: #4A4A4A;
+  font-weight: 16px;
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 1.5em;
+}
+
+.cta-sec {
+  background: url(../images/thought-catalog-505eectW54k-unsplash.jpg), rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 12em 0;
+}
+
+.cta-sec .contained {
+  text-align: center;
+}
+
+.cta-sec .cta-text {
+  color: white;
+  width: 40%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.cta-sec .primary-btn {
+  margin: 0 auto;
+  margin-top: 2.5em;
+}
+
+footer {
+  transform: skewY(2deg);
+  background: linear-gradient(180deg, #524269 0%, #4A4068 0%, #423E66 46.97%, #2D3863 100%);
+  margin-top: -35px;
+  padding: 5em 0;
+}
+
+footer .contained {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 30%;
+  column-gap: 5%;
+  transform: skewY(-2deg);
+}
+
+footer .company-links span,
+footer .members-links span,
+footer .categories-links span,
+footer .social-links span {
+  color: #FCCE00;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+footer .company-links ul,
+footer .members-links ul,
+footer .categories-links ul,
+footer .social-links ul {
+  list-style-type: none;
+  padding-top: .8em;
+}
+
+footer .company-links li,
+footer .members-links li,
+footer .categories-links li,
+footer .social-links li {
+  margin: .5em 0;
+}
+
+footer .company-links a,
+footer .members-links a,
+footer .categories-links a,
+footer .social-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-links img {
+  width: 70%;
+}
+
+.social-links img:nth-of-type(2) {
+  width: 60%;
+}
+
+.social-links span {
+  margin-top: 2em;
+  margin-left: -4em;
+}
+
+.social-links .img-links {
+  display: flex;
+}
+
+.tnc {
+  background-color: #2d3863;
+  padding: 2em 0;
+  margin-top: -35px;
+}
+
+.tnc .contained span {
+  color: white;
+  font-size: 11px;
 }
