@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Menu - LanceMates</title>
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/subheader.css">
-    <link rel="stylesheet" href="css/main.css">
+    <title>Home - LanceMates</title>
+    <link rel="stylesheet" href="css/landing.css">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
     </style>
@@ -16,232 +15,429 @@
 
 <body>
 
-    <header class="header-for-navbar">
-        <div class="navbar">
+    <header class="landing-header">
+        <section class="navbar">
             <div class="brandwrap"><img style="margin-right: 2.5em;" class="brand-logo" src="images/Shape.svg" alt="logo"> LANCE<b>MATES</b> </div>
             <nav class="navlinks">
-                <ul>
-                    <li><a href="profile2.html">profile2</a></li>
-                    <li><a href="browseprojects.html">browse</a></li>
-                    <li><a href="payment.html">payment</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Alerts</a></li>
-                    <li><a href="#">Messages</a></li>
+                <ul style="justify-content: end;">
+
+                    <li><a href="home.html">Create Job</a></li>
+                    <li><a href="browseprojects.html">Browse Job</a></li>
+                    <li><a href="viewproject.html">FAQs</a></li>
+
                 </ul>
             </nav>
-            <a href="#" class="logout-btn">Logout</a>
-        </div>
+            <div>
+                <a href="#">Support</a>
+                <a href="profile2.html" class="login-btn">Login</a>
+            </div>
+        </section>
+
+        <section class="landing-section">
+
+            <div class="contained">
+                <h2>LOREM IPSUM</h2>
+                <h1>Dolor Sit Amet </h1>
+                <h3>consectetur adipiscing elit.</h3>
+
+                <a href="#" class="signup-btn">SIGN UP</a>
+
+                <div class="pagination">
+                    <div class="active"></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+        </section>
+
 
     </header>
     <main>
-        <header class="sub-header">
 
-            <section class="welcome-type">
+        <div class="contained">
 
-                <div class="text-icon-container">
-                    <div class="welcomediv">
-                        <div class="userimage">
-                            <img src="images/Oval 4.png" alt="">
-                        </div>
-                        <div class="welcome-text">
-                            <p class="welcometext">Welcome</p>
-                            <p class="username">PolinaK</p>
-                        </div>
-                    </div>
-                    <div class="redirect-btns">
-                        <a href="#"><img src="images/red-btn2.svg" alt=""></a>
-                        <a href="#"><img src="images/red-btn.svg" alt=""></a>
-                    </div>
-                </div>
-                <div class="usertypediv">
-
-                    <div class="switch-button">
-                        <input class="switch-button-checkbox" type="checkbox"></input>
-                        <label class="switch-button-label" for=""><span class="switch-button-label-span">FREELANCER</span></label>
-                    </div>
+            <section class="browse-cats">
+                <h1>In scelerisque eros <br> gravida,volutpat miet</h1>
 
 
-
-
-                </div>
-
-            </section>
-        </header>
-        <div class="grid-container">
-            <section class="overview-section">
-
-                <h1 class="section-heading">OVERVIEW</h1>
-
-                <div class="ovw-container">
-                    <div class="ovw-card">
-
-                        <span>20+</span>
-                        <p>SKILLS</p>
-                    </div>
-                    <div class="ovw-card">
-
-                        <span>04</span>
-                        <p>AWARDS</p>
-                    </div>
-                    <div class="ovw-card">
-
-                        <span>130</span>
-                        <p>REVIEWS</p>
-                    </div>
-
-                </div>
-                <div class="verify-container">
-                    <div class="ver-items">
-                        <div class="ver-card">
-                            <img src="images/money.svg" alt="">
-                            <p>VERIFIED</p>
-                        </div>
-                        <div class="ver-card">
-                            <img src="images/phone.svg" alt="">
-                            <p>VERIFIED</p>
-                        </div>
-                        <div class="ver-card">
-                            <img src="images/mail.svg" alt="">
-                            <p>NOT <br> VERIFIED</p>
-                        </div>
-
-                    </div>
-
-                    <p class="card-text">23+ TO VERIFY</p>
-                    <div class="divider"></div>
-
-
-                    <a href="#" class="card-btn">GET VERIFIED</a>
-                </div>
-                <div class="sm-container">
-                    <p class="card-text">SOCIAL MEDIA SHARE</p>
-
-                    <div class="sm-icons">
-                        <a href="#"><img src="images/social (4).svg" alt=""></a>
-                        <a href="#"><img src="images/social (3).svg" alt=""></a>
-                        <a href="#"><img src="images/social (2).svg" alt=""></a>
-                        <a href="#"><img src="images/social (1).svg" alt=""></a>
-                    </div>
-                    <p class="card-text">OTHERS</p>
-                    <a href="#" class="card-links">https://lancemate.com/mpolina/1234/..</a>
-                    <a href="#" class="card-btn">SHARE</a>
-                </div>
-
-            </section>
-
-            <!-- Project Section -->
-            <section class="projects-section">
-
-                <h1 class="section-heading">ACTIVE PROJECTS <span style="color: #F2695A;">02</span></h1>
-
-                <!-- Project Cards -->
-
-                <div class="project-card">
-                    <div class="desc-img">
-                        <div class="project-img">
-                            <img src="images/projectimg.png" alt="projectimg">
-                        </div>
-                        <div class="project-desc">
-                            <h3>Xamarin Hybrid GeoTagging/ Scoring IPhone/Wa…</h3>
-                            <p><span>Less than 2 KMS</span> Consectetur adipiscing… </p>
-
-                        </div>
-                    </div>
-                    <div class="project-rate">
-                        <p>$50</p>
-                        <span>ACTIVE</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="desc-img">
-                        <div class="project-img">
-                            <img src="images/projectimg.png" alt="projectimg">
-                        </div>
-                        <div class="project-desc">
-                            <h3>Angular Developer or Corporate Partner Required</h3>
-                            <p><span>Less than 1 KMS</span> Consectetur adipiscing… </p>
-
-                        </div>
-                    </div>
-                    <div class="project-rate">
-                        <p>$50</p>
-                        <span>ACTIVE</span>
-                    </div>
+                <div class="browse-btn">
+                    <h2>BROWSE CATEGORIES</h2>
+                    <button>VIEW MORE</button>
                 </div>
 
 
-                <!-- Bid Cards -->
-                <h1 class="section-heading">Bids Own / lost </h1>
+                <div class="cat-card-container">
 
-                <div class="bid-card">
-                    <div class="bid-desc">
-                        <h3>Strong exposure to designing and developing highly scalable application, with strong development knowledge in Codeignitor</h3>
-                        <p> Consectetur adipiscing… </p>
+                    <div class="cat-card">
 
+                        <h4> WEBSITES, IT <br> & SOFTWARE </h4>
+                        <span>101825</span>
                     </div>
+                    <div class="cat-card">
 
-                    <div class="bid-rate">
-                        <p>$50</p>
-                        <span class="lost-bid">LOST</span>
+                        <h4> WEBSITES, IT <br> & SOFTWARE </h4>
+                        <span>101825</span>
                     </div>
-                </div>
-                <div class="bid-card">
-                    <div class="bid-desc">
-                        <h3>Strong exposure to designing and developing highly scalable application, with strong development knowledge in Codeignitor</h3>
-                        <p> Consectetur adipiscing… </p>
+                    <div class="cat-card">
 
+                        <h4> WEBSITES, IT <br> & SOFTWARE </h4>
+                        <span>101825</span>
                     </div>
+                    <div class="cat-card">
 
-                    <div class="bid-rate">
-                        <p>$50</p>
-                        <span>OWN</span>
+                        <h4> WEBSITES, IT <br> & SOFTWARE </h4>
+                        <span>101825</span>
                     </div>
-                </div>
+                    <div class="cat-card">
 
-
-
-                <!-- Projects Near You -->
-                <div class="head-btn-container">
-                    <h1 class="section-heading">LAtest projects near you </h1>
-                    <button class="view-all-btn">VIEW ALL</button>
-                </div>
-
-
-                <div class="pny-card">
-                    <div class="bid-desc">
-                        <h3>Custom Logo & Branding with Website & Mobile app</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing…</p>
-
-                    </div>
-
-                    <div class="bid-rate">
-                        <p>$50</p>
-                        <span class="bid-placed">bid placed</span>
+                        <h4> WEBSITES, IT <br> & SOFTWARE </h4>
+                        <span>101825</span>
                     </div>
                 </div>
 
             </section>
 
-            <section class="tnc-agree">
+            <section class="why-us">
+                <h2>WHY LANCEMATES ?</h2>
+                <p>Mauris eleifend imperdiet nunc id vehicula. Ut pulvinar, dolor eu pharetra blandit, lorem libero bibendum odio,</p>
+            </section>
 
-                <span> LANCE<b>MATES</b></span>
+        </div>
+        <section class="why-us-cards">
 
 
-                <div class="text-agree">
+            <div class="left-card">
+                <div class="square-rect">
+                    <div class="square"></div>
+                    <div class="rect-wrap">
+                        <div class="rect"></div>
+                        <div class="rect"></div>
 
-                    <p>Please note the LanceMates Terms & Conditions (including insurance) have been updated. Please review here</p>
-                    <button class="card-btn">I AGREE</button>
+                    </div>
+                </div>
+                <h4> Post Your Tasks</h4>
+                <p>Nulla in mi maximus, tincidunt leo non, suscipit orci. In pellentesque orci sed elit varius, placerat pharetra risus molestie. Maecenas sagittis </p>
+            </div>
+            <div class="center-card">
+                <div class="square-rect">
+                    <div class="square"></div>
+                    <div class="rect-wrap">
+                        <div class="rect"></div>
+                        <div class="rect"></div>
+
+                    </div>
+                </div>
+                <h4> Review Offers</h4>
+                <p>Maecenas id porta erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In nibh ante, consequat sit amet</p>
+
+            </div>
+            <div class="right-card">
+                <div class="square-rect">
+                    <div class="square"></div>
+                    <div class="rect-wrap">
+                        <div class="rect"></div>
+                        <div class="rect"></div>
+
+                    </div>
+                </div>
+                <h4> Get More Done</h4>
+                <p>convallis sodales magna. In elementum neque eu luctus ultrices. In ex eros, posuere eget justo ut, luctus hendrerit est. In ultricies tellus ullamcorper</p>
+
+            </div>
+
+        </section>
+
+        <section class="newsletter">
+            <div class="contained">
+                <div class="newsletter-form">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper.</p>
+                    <div>
+                        <input type="email" placeholder="enter your email...">
+                        <button>GO</button>
+                    </div>
                 </div>
 
-            </section>
+            </div>
+
+
+        </section>
+        <section class="recentlyposted">
+
+            <div class="contained">
+
+                <h2 class="sec-head">RECENTLY POSTED JOBS</h2>
+                <p class="sec-p">Ut pulvinar, dolor eu pharetra blandit, lorem libero bibendum odio,</p>
+
+                <div class="pr-card-container">
+
+
+                    <div class="project-card">
+                        <div class="desc-img">
+                            <div class="project-img">
+                                <img src="images/projectimg.png" alt="projectimg">
+                            </div>
+                            <div class="project-desc">
+                                <h3>Xamarin Hybrid GeoTagging/ Scoring IPhone/Wa…</h3>
+                                <p><span>Less than 2 KMS</span> Consectetur adipiscing… </p>
+
+                            </div>
+                        </div>
+                        <div class="project-rate">
+                            <p>$50</p>
+                            <span>ACTIVE</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="desc-img">
+                            <div class="project-img">
+                                <img src="images/projectimg.png" alt="projectimg">
+                            </div>
+                            <div class="project-desc">
+                                <h3>Xamarin Hybrid GeoTagging/ Scoring IPhone/Wa…</h3>
+                                <p><span>Less than 2 KMS</span> Consectetur adipiscing… </p>
+
+                            </div>
+                        </div>
+                        <div class="project-rate">
+                            <p>$50</p>
+                            <span>ACTIVE</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="desc-img">
+                            <div class="project-img">
+                                <img src="images/projectimg.png" alt="projectimg">
+                            </div>
+                            <div class="project-desc">
+                                <h3>Xamarin Hybrid GeoTagging/ Scoring IPhone/Wa…</h3>
+                                <p><span>Less than 2 KMS</span> Consectetur adipiscing… </p>
+
+                            </div>
+                        </div>
+                        <div class="project-rate">
+                            <p>$50</p>
+                            <span>ACTIVE</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="desc-img">
+                            <div class="project-img">
+                                <img src="images/projectimg.png" alt="projectimg">
+                            </div>
+                            <div class="project-desc">
+                                <h3>Xamarin Hybrid GeoTagging/ Scoring IPhone/Wa…</h3>
+                                <p><span>Less than 2 KMS</span> Consectetur adipiscing… </p>
+
+                            </div>
+                        </div>
+                        <div class="project-rate">
+                            <p>$50</p>
+                            <span>ACTIVE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="view-project-btn">VIEW MORE</a>
+
+            </div>
+
+
+
+
+        </section>
+
+        <section class="signup-sec">
+
+            <div class="contained">
+                <div class="location-text">
+                    <div class="location-img">
+                        <img src="images/placeholder.png" alt="">
+                    </div>
+                    <div class="signup-content">
+                        <h1>Vestibulum conval <br> ante ac magna vivera</h1>
+                        <p>Ut pulvinar, dolor eu pharetra bland it, lorem libero bibendum odio,</p>
+                        <button class="primary-btn">SIGN UP</button>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+                <div class="background-obj"></div>
+            </div>
+
+
+
+        </section>
+
+        <section class="testimony-sec">
+
+            <div class="contained">
+
+
+                <div class="testimony-container">
+                    <img src="images/projectimg.png" alt="" width="100px">
+                    <p class="testimony-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet
+                    </p>
+                    <span class="testimony-name">Jack, Partner & MD - Bain & Company</span>
+                    <div class="pagination">
+                        <div class="active"></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="cta-sec">
+
+
+
+            <div class="contained">
+
+                <p class="cta-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla
+                </p>
+
+                <a href="#" class="primary-btn">CALL TO ACTION</a>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="contained">
+
+            <div class="company-links">
+
+                <span class="footer-head">COMPANY</span>
+                <ul>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#">Community Guidelines</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+            <div class="members-links">
+
+                <span class="footer-head">EXISTING MEMBERS</span>
+                <ul>
+                    <li>
+                        <a href="#">Post a Task</a>
+                    </li>
+                    <li>
+                        <a href="#">Browse Tasks</a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                    <li>
+                        <a href="#">Support Centre</a>
+                    </li>
+                    <li>
+                        <a href="#">Merchandise</a>
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+            <div class="categories-links">
+
+                <span class="footer-head">CATEGORIES</span>
+                <ul>
+                    <li>
+                        <a href="#">Tradesman</a>
+                    </li>
+                    <li>
+                        <a href="#">Marketing & Design</a>
+                    </li>
+                    <li>
+                        <a href="#">Home & Garden</a>
+                    </li>
+                    <li>
+                        <a href="#">Delivery</a>
+                    </li>
+                    <li>
+                        <a href="#">Fun & Quirky</a>
+                    </li>
+                    <li>
+                        <a href="#">Event & Photography</a>
+                    </li>
+                    <li>
+                        <a href="#">Computers & Web</a>
+                    </li>
+                    <li>
+                        <a href="#">Business & Admin</a>
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+            <div class="social-links">
+
+                <img src="images/googleplay.png" alt="">
+                <img src="images/image.png" alt="">
+
+
+
+                <span class="footer-head">FOLLOW US</span>
+
+                <div class="img-links">
+                    <a href="#"><img src="" alt=""></a>
+                </div>
+
+
+
+
+            </div>
+
+
+
 
         </div>
 
 
 
 
-    </main>
-    <footer></footer>
+    </footer>
+    <div class="tnc">
+
+        <div class="contained">
+
+            <span> © 2018 LANCEMATES. All rights reserved.</span>
+        </div>
+    </div>
+
+
 
 </body>
 

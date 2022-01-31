@@ -478,6 +478,7 @@ body {
   padding: 12px 2em;
   border-radius: 2em;
   margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
 
 .ver-items {
@@ -521,5 +522,250 @@ body {
 .bidders .main-heading {
   margin-top: 2em;
   padding-bottom: 2em;
+}
+
+.bidders .bidder-container {
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  padding: 1em 1%;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #D9D9D9;
   border-bottom: 1px solid #D9D9D9;
+}
+
+.bidders .bidder-container:last-of-type {
+  border-top: none;
+  margin-bottom: 1.5em;
+}
+
+.bidders .bidder-container p {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.bidders .bidder-container span {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.bidders .bidder-name-time p:nth-of-type(1) {
+  color: #5C707D;
+  margin-bottom: 1em;
+}
+
+.bidders .bidder-name-time p:nth-of-type(2) {
+  color: #236AAE;
+}
+
+.bidders .bidder-rating .payment-rate {
+  display: flex;
+  align-items: center;
+  margin-bottom: .7em;
+}
+
+.bidders .bidder-rating span {
+  margin-right: 2em;
+  color: #F2695A;
+}
+
+.bidders .bidder-rating .rating-bar {
+  width: 52px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #D9D9D9;
+  position: relative;
+  margin-top: .15em;
+}
+
+.bidders .bidder-rating .rating-bar p {
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+}
+
+.bidders .bidder-rating .inner-bar {
+  width: 80%;
+  height: 100%;
+  background-color: #7ED321;
+  border-radius: 2px;
+}
+
+.bidders .bidder-rating .dollar-div {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 15.2px;
+  height: 15.2px;
+  border-radius: 50%;
+  background-color: #7ED321;
+  border: .8px solid #EDF2F5;
+  top: -6px;
+}
+
+.bidders .bidder-rating .emp-review {
+  display: flex;
+}
+
+.bidders .bidder-rating .rev-stars {
+  display: flex;
+}
+
+.bidders .bidder-rating .rev-stars img {
+  width: 11.34px;
+  height: 10.66px;
+  object-fit: cover;
+}
+
+.bidders .bidder-completionrate {
+  text-align: right;
+}
+
+.bidders .bidder-completionrate p {
+  color: #5C707D;
+}
+
+.bidders .bidder-completionrate p:first-of-type {
+  margin-bottom: 1em;
+}
+
+.bidders .bidder-completionrate span {
+  color: #F2695A;
+  margin-right: .5em;
+}
+
+.bidders .bidder-amt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: .5em 0;
+  padding-left: 1em;
+  padding-right: .5em;
+  border-left: 1px solid #979797;
+}
+
+.bidders .bidder-amt span {
+  font-weight: 600;
+  font-size: 18px;
+  color: #5C707D;
+  padding-bottom: .2em;
+}
+
+.bidders .bidder-amt p {
+  color: #236AAE;
+}
+
+.comments .cmnt-browse {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  column-gap: 10%;
+}
+
+.comments .cmnt-browse .make-comment {
+  border-bottom: 1px solid #9B9B9B;
+  padding-bottom: .5em;
+}
+
+.comments .cmnt-browse .make-comment p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #E0B700;
+}
+
+.comments .cmnt-browse .make-comment input {
+  border: none;
+}
+
+.comments .cmnt-browse .browse {
+  border-bottom: 1px solid #9B9B9B;
+  padding-bottom: .5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comments .cmnt-browse .browse span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #E0B700;
+}
+
+.comments .cmnt-browse .browse button {
+  background-color: #CBF0F0;
+  color: #4A4A4A;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0;
+  border: none;
+  border-radius: 2em;
+  outline: none;
+  padding: .6em 1.5em;
+  cursor: pointer;
+}
+
+.comments .cmnt-browse .cmnt-btn {
+  background-color: #5C707D;
+  color: white;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0;
+  border: none;
+  border-radius: 2em;
+  outline: none;
+  padding: .6em 1.5em;
+  width: max-content;
+  grid-column: 1/3;
+  justify-self: center;
+  margin: 1.5em 0;
+  cursor: pointer;
+}
+
+.existing-comments {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/3;
+}
+
+.existing-comments .cmnt-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .6em 1%;
+  border-top: 1px solid #D9D9D9;
+}
+
+.existing-comments .cmnt-div .pfp-cmnt {
+  display: flex;
+  align-items: center;
+}
+
+.existing-comments .cmnt-div .pfp-cmnt img {
+  margin-right: 1.5em;
+}
+
+.existing-comments .cmnt-div .pfp-cmnt p {
+  font-size: 10px;
+  font-weight: 400;
+  color: #5C707D;
+  width: 60%;
+}
+
+.existing-comments .cmnt-div .cmnt-options span,
+.existing-comments .cmnt-div .cmnt-options button {
+  background: none;
+  font-size: 10px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  color: #5C707D;
+}
+
+.existing-comments .cmnt-div .cmnt-options span {
+  margin-right: 1.6em;
+}
+
+.existing-comments .cmnt-div .cmnt-options button {
+  cursor: pointer;
 }
