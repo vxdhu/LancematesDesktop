@@ -302,7 +302,7 @@
                             <div class="reqskills">
                                 <h1 class="main-heading">required skills</h1>
                                 <p>Graphic Design, Website Design</p>
-                                <button>PLACE BID</button>
+                                <button id="placebid">PLACE BID</button>
 
                             </div>
                             <div class="bidders">
@@ -444,6 +444,64 @@
                             </div>
 
 
+                            <div class="place-bid-container" style="display: none;">
+                                <h1 class="main-heading">Your bid proposal</h1>
+
+                                <div class="bid-details-grid">
+
+                                    <div class="bid-proposal">
+                                        <p>Proposal</p>
+                                        <p>Lorem ipsum dolor sit amet, consecte tur adipisc ing elit. Donec venenatis, nulla eu maximus rutrum, augue elit </p>
+
+
+                                    </div>
+                                    <div class="proposal-rate">
+
+
+
+                                    </div>
+                                    <div class="deliver-in">
+                                        <p>Deliver in</p>
+                                        <select name="deliver" id="">
+                                            <option value="days">Days</option>
+                                        </select>
+                                    </div>
+                                    <div class="completion-date">
+                                        <div>
+                                            <p>I can complete by</p>
+                                            <p>10/03/2018</p>
+                                        </div>
+                                        <div class="toggle-holder"> <input type="checkbox" id="switch" /><label for="switch">Toggle</label></div>
+                                    </div>
+                                    <div class="payment">
+                                        <p>Deliver in</p>
+                                        <select name="payment" id="">
+                                            <option value="days">PayTM</option>
+                                        </select>
+                                    </div>
+                                    <div class="portfolio-link">
+                                        <p>Portfolio Link</p>
+                                    </div>
+                                    <div class="attachments">
+                                        <p>Attachment</p>
+                                        <button>BROWSE</button>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                                <button id="placebid-final">PLACE BID</button>
+                                <button id="cancelbtn">CANCEL</button>
+
+
+
+                            </div>
+
+
+
                         </div>
                     </div>
                 </section>
@@ -485,7 +543,18 @@
     </main>
 
 
+    <script>
+        const pbcontainer = document.querySelector('.place-bid-container');
+        const placebidbtn = document.querySelector('#placebid');
+        const cancelbtn = document.querySelector('#cancelbtn');
 
+        placebidbtn.addEventListener('click', () => {
+            pbcontainer.style.display = "unset"
+        })
+        cancelbtn.addEventListener('click', () => {
+            pbcontainer.style.display = "none"
+        })
+    </script>
 </body>
 
 </html>
