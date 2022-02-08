@@ -81,6 +81,10 @@ const projectcontainer = document.querySelector('.projects-view')
 async function getProjects() {
     // const res = await axios.get(baseUrl);
     // const feedobj = res.data.feeds
+
+    const currProjects = document.querySelectorAll('.project-card')
+        // currProjects.forEach()
+
     console.log(projects);
     projects.forEach(element => {
         createProject(element)

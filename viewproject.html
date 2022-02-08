@@ -443,7 +443,7 @@
 
                             </div>
 
-
+                            <!-- Place BId COntaienr -->
                             <div class="place-bid-container" style="display: none;">
                                 <h1 class="main-heading">Your bid proposal</h1>
 
@@ -500,6 +500,55 @@
 
                             </div>
 
+                            <!-- Create Project Container -->
+                            <div class="create-project-container" style="display: none;">
+                                <h1 class="main-heading">Enter Project Details</h1>
+
+                                <div class="pr-details-grid">
+
+                                    <div class="prtitilediv">
+                                        <label for="">Title</label>
+                                        <input type="text">
+
+                                    </div>
+
+                                    <div class="prskills">
+                                        <label for="">Req. Skills</label>
+                                        <input type="text">
+                                    </div>
+
+                                    <div class="prdescdiv">
+                                        <label for="prdesc">Description</label>
+                                        <textarea name="" id="prdesc" cols="30" rows="2"></textarea>
+
+
+                                    </div>
+                                    <div class="prrate">
+                                        <label for="pr-rate">Rate</label>
+                                        <div class="rate-curr">
+                                            <input type="number">
+                                            <select name="currency" id="">
+                                                <option value="$">$</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="prattach">
+                                        <label for="prdesc">Attachments</label> <button>Browse</button>
+
+
+                                    </div>
+                                    <button id="created-btn">CREATE PROJECT</button>
+                                </div>
+
+
+
+
+
+
+
+
+
+                            </div>
 
 
                         </div>
@@ -517,7 +566,7 @@
 
         <section class="utils-menu">
 
-            <div class="util-div">
+            <div id="createbtn" class="util-div">
                 <img src="images/addtask.png" alt="">
                 <span class="createtask">CREATE TASK</span>
             </div>
@@ -543,6 +592,7 @@
     </main>
 
 
+    <!-- Place Bid Container Script -->
     <script>
         const pbcontainer = document.querySelector('.place-bid-container');
         const placebidbtn = document.querySelector('#placebid');
@@ -555,6 +605,7 @@
             pbcontainer.style.display = "none"
         })
     </script>
+    <script src="utils.js"></script>
 </body>
 
 </html>
