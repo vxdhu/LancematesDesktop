@@ -451,12 +451,24 @@
 
                                     <div class="bid-proposal">
                                         <p>Proposal</p>
-                                        <p>Lorem ipsum dolor sit amet, consecte tur adipisc ing elit. Donec venenatis, nulla eu maximus rutrum, augue elit </p>
+                                        <textarea name="bid prposal" id="" cols="30" rows="3"></textarea>
 
 
                                     </div>
                                     <div class="proposal-rate">
-
+                                        <div>
+                                            <input type="number" placeholder="Proposed Rate">
+                                            <select name="curr" id="">
+                                                <option value="$">USD</option>
+                                                <option value="$">INR</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <p>Your Project Fee</p> <span>500USD</span>
+                                        </div>
+                                        <div>
+                                            <p>Your Total Bid</p> <span style="color: #F2695A;">530USD</span>
+                                        </div>
 
 
                                     </div>
@@ -469,7 +481,7 @@
                                     <div class="completion-date">
                                         <div>
                                             <p>I can complete by</p>
-                                            <p>10/03/2018</p>
+                                            <input type="date">
                                         </div>
                                         <div class="toggle-holder"> <input type="checkbox" id="switch" /><label for="switch">Toggle</label></div>
                                     </div>
@@ -480,11 +492,10 @@
                                         </select>
                                     </div>
                                     <div class="portfolio-link">
-                                        <p>Portfolio Link</p>
+                                        <input type="text" placeholder="Portfolio Link">
                                     </div>
                                     <div class="attachments">
-                                        <p>Attachment</p>
-                                        <button>BROWSE</button>
+                                        <input type="text" placeholder="Attachment">
                                     </div>
 
 
@@ -499,60 +510,81 @@
 
 
                             </div>
+                        </div>
 
-                            <!-- Create Project Container -->
-                            <div class="create-project-container" style="display: none;">
-                                <h1 class="main-heading">Enter Project Details</h1>
+                        <!-- Create Project Container -->
+                        <div class="create-project-container" style="display: none;">
+                            <h1 class="main-heading">Enter Project Details</h1>
 
-                                <div class="pr-details-grid">
+                            <div class="pr-details-grid">
 
-                                    <div class="prtitilediv">
-                                        <label for="">Title</label>
-                                        <input type="text">
+                                <div class="prtitilediv">
+                                    <label for="">Title</label>
+                                    <input type="text" placeholder="Project Title">
 
-                                    </div>
-
-                                    <div class="prskills">
-                                        <label for="">Req. Skills</label>
-                                        <input type="text">
-                                    </div>
-
-                                    <div class="prdescdiv">
-                                        <label for="prdesc">Description</label>
-                                        <textarea name="" id="prdesc" cols="30" rows="2"></textarea>
-
-
-                                    </div>
-                                    <div class="prrate">
-                                        <label for="pr-rate">Rate</label>
-                                        <div class="rate-curr">
-                                            <input type="number">
-                                            <select name="currency" id="">
-                                                <option value="$">$</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="prattach">
-                                        <label for="prdesc">Attachments</label> <button>Browse</button>
-
-
-                                    </div>
-                                    <button id="created-btn">CREATE PROJECT</button>
                                 </div>
 
+                                <div class="prskills">
+                                    <label for="">Req. Skills</label>
+                                    <input type="text" placeholder="Req. Skills">
+                                </div>
+
+                                <div class="prdescdiv">
+                                    <label for="prdesc">Description</label>
+                                    <textarea name="" id="prdesc" cols="30" rows="2"></textarea>
 
 
+                                </div>
+                                <div class="prrate">
+                                    <label for="pr-rate">Rate</label>
+                                    <div class="rate-curr">
+                                        <div>
+                                            <input type="number" placeholder="min">
+                                            <select name="currency" id="">
+                                            <option value="$">$</option>
+                                         </select>
+                                        </div>
+                                        <div>
+                                            <input type="number" placeholder="max">
+                                            <select name="currency" id="">
+                                            <option value="$">$</option>
+                                         </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prattach">
+                                    <label for="prdesc">Attachments</label>
+                                    <input type="text" placeholder="URL HERE">
 
 
+                                </div>
+                                <div class="prlocation">
+                                    <label for="prloc">Location</label>
+                                    <select name="location" id="">
+                                        <option value="Remote">Remote</option>
+                                     </select>
 
 
+                                </div>
+                                <div class="prdue">
+                                    <label for="prdue">Due Date</label>
+                                    <select name="days" id="">
+                                        <option value="Days">Days</option>
+                                        <option value="Days">3 Days</option>
+                                        <option value="Days">5 Days</option>
+                                     </select>
 
 
+                                </div>
+                                <button id="created-btn">CREATE PROJECT</button>
                             </div>
-
-
                         </div>
                     </div>
+
+
+
+
+                    <!-- Insert hre -->
                 </section>
 
 

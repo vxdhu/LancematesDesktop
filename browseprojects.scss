@@ -757,6 +757,22 @@ body {
         grid-template-columns: 45% 45%;
         column-gap: 10%;
         row-gap: 1.5em;
+        textarea {
+            resize: none;
+            border: none;
+            outline: none;
+            font-size: 10px;
+            width: 100%;
+        }
+        input {
+            font-size: 12px;
+            border: none;
+            outline: none;
+            width: 100%;
+        }
+        input[type=date] {
+            color: #F2695A;
+        }
     }
     .bid-proposal,
     .proposal-rate,
@@ -831,6 +847,26 @@ body {
         input:checked+label:after {
             left: calc(100% - 3px);
             transform: translateX(-100%);
+        }
+    }
+    .proposal-rate {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        div {
+            display: flex;
+            justify-content: space-between;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        p {
+            font-size: 9px;
+        }
+        span {
+            font-size: 10px;
         }
     }
     .deliver-in,
